@@ -24,7 +24,7 @@
 <div id="mainDiv">
 
 	<div id="content">
-		<audio id="audio" style="display:none" autoplay="autoplay" controls="controls" loop="loop" preload="auto" height="100" width="100">
+		<audio id="audio"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" height="100" width="100">
 							 <source src="/love.mp3" type="audio/mpeg">
 	 </audio>
 
@@ -82,15 +82,7 @@
 	</div>
 </div>
 
-<script type="text/javascript">
-var audio = document.getElementById('audio');
-jQuery.ajax({
-url: 'ajax.js',
-async: false,
-success: function() {
-audio.play(); // audio will play in iOS before 4.2.1
-}
-});
+
 
 <script type="text/javascript">
 var offsetX = $("#loveHeart").width() / 2;
